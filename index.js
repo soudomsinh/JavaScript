@@ -150,7 +150,9 @@ if(num % 2 == 0){
 // while loop 
 let count = 1;
 while(count <= 5){
-    console.log("hello world");
-    
+    console.log("keep doing at n times", count);
+    if(count == 3){
+        break;
+    }
     count ++ ; // 1=> 2 =>3 => 4....
 }
