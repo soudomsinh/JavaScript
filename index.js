@@ -156,3 +156,9 @@ while(count <= 5){
     }
     count ++ ; // 1=> 2 =>3 => 4....
 }
+
+// for loop
+for(let count2 = 1; count2 <= 5; count2++ ){
+    console.log("Hello world")
+}
+
