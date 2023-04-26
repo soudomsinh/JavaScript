@@ -304,4 +304,4 @@ function fullname(fname, lname, address = "Boston") {
 fullname("Sengdao", "oudomsinh")
 fullname("John", "Wick", "New York")
 fullname("John","Doe", "Unknown")
-ullname("Sara","Smith", "Washington DC")
+fullname("Sara","Smith", "Washington DC")
