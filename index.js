@@ -162,3 +162,145 @@ for(let count2 = 1; count2 <= 5; count2++ ){
     console.log("Hello world")
 }
 
+// Do while
+let doo = 0;
+do{
+    console.log(doo);
+    doo ++
+}while(doo <= 5){
+
+};
+
+// compare do... while() to while()
+// let boo = 1;
+// while(true){
+//     if(boo == 100) break;
+//     boo ++;
+//     console.log(boo)
+// }
+
+// break()
+for(let bazz = 1; bazz <= 10; bazz ++ ){
+    if (bazz == 7) break; {
+        console.log(bazz);    
+    }
+}
+console.log("Loop end");
+
+// continue()
+for(let foo = 1; foo <= 10; foo ++ ){
+    if (foo == 7) continue; {
+        console.log(foo);    
+    }
+}
+console.log("Loop end");
+
+// Null, undefined, NaN
+// Nan => Not A Number
+let a=null;
+if (a) {
+    console.log("a is null");
+}else{
+    console.log("a is not null");
+}
+
+let aa=null;
+if (!aa) {
+    console.log("aa is null");
+}else{
+    console.log("aa is not null");
+}
+
+let naan = 10 * "hello";
+console.log(naan); // output NaN
+
+// function without return and parameters
+function greeting() {
+    console.log("Hello world");
+}
+greeting();
+
+function message() {
+    alert("Thanks for clicking me")
+}
+
+function displayName() {
+    document.write("I am a developer")
+    
+}
+
+// function(s) with parameter(s) and return
+function MathsAddition(t) {
+    console.log("Received number is = ", t);
+}
+MathsAddition(6)
+MathsAddition(20)
+let myvar = "Apple";
+MathsAddition(myvar)
+
+function fullname(fname, lname, address) {
+    console.log("Firstname is :",  fname, "|", "Lastname is : ", lname, "|", "Address is :", address);
+}
+
+fullname("Sengdao", "oudomsinh")
+fullname("John", "Wick", "New York")
+fullname("John",)
+
+
+
+function sumation(num1, num2) {
+    let total = num1 + num2;
+    console.log("total sum is : ", total);
+}
+
+sumation(40, 30)
+
+
+function localIP() {
+    return "123456789"
+}
+
+let ipadress = localIP();
+console.log("IP Address is : ", ipadress);
+
+
+function uni() {
+    let college = "College of the Atlantic";
+    return college;
+}
+console.log("University i study at is ", uni());
+
+function newSumation() {
+    return 10*10;
+}
+
+let newSum = newSumation()
+console.log("Summation of number is : ", newSum);
+
+function setSalary(salary) {
+    let bonus = 1000;
+    return bonus + salary
+}
+
+///
+let monthly = setSalary(2000), rent = 700;
+
+console.log("Total earning is : ", monthly - rent );
+
+
+function family(dad, mom) {
+    return dad + mom
+}
+
+let parent = family(1, 1)
+console.log("dad + mom = " , parent);
+
+
+// 
+function fullname(fname, lname, address = "Boston") {
+    console.log("Firstname is :",  fname, "|", "Lastname is : ", lname, "|", "Address is :", address);
+}
+
+fullname("Sengdao", "oudomsinh")
+fullname("John", "Wick", "New York")
+fullname("John",)
