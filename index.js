@@ -6,3 +6,5 @@ color.forEach(myData);
 function myData(item) { 
     console.log("color = ", item);   
 }
+
+console.log("Hello world");
