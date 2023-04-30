@@ -1,9 +1,9 @@
-let A = ["tomato", "mushroom", "spanish", "carrot", "peper"]
-let B = ["Apple", "Oranges", "peach", "pear", "mango"]
-let C = ["baking soda", "noodle", "soy sauce", "miso", "stock", "bread"]
+let points = [20, 100, -100, 5, -25, 10];
 
-let D = A.concat(B, C)
-console.log ("C =", D);
+// arrange in ascending order
+console.log(points);
+points.sort(function(a, b){
+    return a - b;
+})
 
-console.log("Hello world");
-console.log("Goodbye world");
+console.log(points);
