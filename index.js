@@ -374,3 +374,7 @@ console.log(last_fruit2);
 console.log("Before = ", fruits);
 fruits.push("papaya", "grapes")
 console.log("After adding = " ,fruits);
+
+
+let t = "Hello world"
+console.log(t);
