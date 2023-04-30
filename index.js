@@ -1,9 +1,20 @@
-let points = [20, 100, -100, 5, -25, 10];
+// JavaScript Object
 
-// arrange in ascending order
-console.log(points);
-points.sort(function(a, b){
-    return a - b;
-})
+// let Name_of_Object = {propertyName:value}
 
-console.log(points);
+// For example
+
+let product = {
+    names: "mouse", 
+    price: 20,
+    color: "black",
+    category: "electronic",
+    size: "regular",
+}
+
+// method 1
+console.log("name of product is =", product.names);
+console.log("price of product is =", product.price);
+
+// method 2
+console.log("color of product is =", product["color"]);
