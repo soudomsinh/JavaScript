@@ -4,3 +4,6 @@ let C = ["baking soda", "noodle", "soy sauce", "miso", "stock", "bread"]
 
 let D = A.concat(B, C)
 console.log ("C =", D);
+
+console.log("Hello world");
+console.log("Goodbye world");
