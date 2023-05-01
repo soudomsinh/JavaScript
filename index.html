@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DOM Node</title>
 </head>
-<body class="bgcolor" id = "bgwhite">
-    <p id="title">Learning JavaScript and DOM</p>
-    <p class="content">Body Content of JS DOM</p>
-    <p> css basic</p>
-
-    <div class="box">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Impedit reiciendis cumque repudiandae id deleniti! Ipsa, 
-            deleniti! Alias fugit asperiores iure inventore aperiam? 
-            Similique alias libero illum modi enim minus distinctio!</p>
-    </div>
-
-    <button onclick="displayText()">Click to change BG color</button>
-    <button onclick="newBGcolor()">Click to change BG 2 white</button>
-    <button onclick="orangeMode()">Orange Mode</button>
-    <button onclick="purpleMode()">Purple Mode</button>
+<body>
+    <h1>Learning DOM Node</h1>
+    <p>hello JavaScript</p>
+    <p>JavaScript Basic </p>
     
+    <ul id="menu">
+    </ul>
+
+    <button onclick="addItem()">Add New Item</button>
+
+    <ul id="foo">
+        <li id="item-1">A</li>
+        <li id="item-2">B</li>
+        <li id="item-3">C</li>
+        <li id="item-4">D</li>
+
+    </ul>
+    <button onclick="deleteItem()">Delete item</button>
+    <button onclick="replaceItem()">Replace item</button>
+
+
+    <div>
+        <p> document.createElement(Element) // create new element </p> 
+        <p>document.removeChild(Element) // remove child node</p> 
+        <p>document.appendChild(Element) // append or add new node to mother node</p> 
+        <p>document.replaceChild(new,old) // replace element</p> 
+    </div>
 
     <script src="index.js"></script>
 </body>

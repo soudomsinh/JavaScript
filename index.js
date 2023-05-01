@@ -1,33 +1,37 @@
-const bodyBG = document.querySelector('.bgcolor');
-const title_Element = document.getElementById('title'); // refer by id attribute
-const content_Element = document.querySelector('.content'); // refer by class attribute
-const All_Element = document.querySelectorAll('p');
-const box = document.querySelector('.box');
+// DOM Node
 
-function displayText() {
-    bodyBG.style.backgroundColor= "hsla(89, 43%, 51%, 0.3)"
-    title_Element.style.color = "red";
-    title_Element.style.backgroundColor="yellow"
-    title_Element.style.fontSize = "60px"
-    content_Element.setAttribute('class', 'newContent' )
+const textALL = document.querySelectorAll('p')
 
+console.log(textALL);
+console.log(textALL[0]);
+console.log(textALL[1]);
+console.log(textALL[2]);
+console.log(textALL[3].innerHTML);
+let message = textALL[4].innerHTML;
+console.log(message);
+
+
+let count = 1;
+
+function addItem() {
+    const menu = document.getElementById('menu');
+    const item = document.createElement('li');
+    item.innerText = 'My new item ' + (count ++)
+    menu.appendChild(item) 
 }
 
+//////////
+const foo = document.getElementById('foo');
+const fooItem = document.getElementById('item-3');
+const itemB = document.getElementById('item-2') // item-2 = B and it get replaced with X
+const newItem = document.createElement('li')
+newItem.innerText = "X"
 
-function orangeMode() {
-    box.setAttribute('class', 'orange' )
-    
+
+function deleteItem() {
+    foo.removeChild(fooItem);
 }
 
-
-function purpleMode() {
-    box.setAttribute('class', 'purple' )
-    
+function replaceItem() {
+    foo.replaceChild(newItem, itemB)
 }
-
-
-
-function newBGcolor(){
-    bodyBG.style.backgroundColor="white"
-}
-
