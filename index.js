@@ -22,7 +22,7 @@ function addItem() {
 
 //////////
 const foo = document.getElementById('foo');
-const fooItem = document.getElementById('item-3');
+const fooItem = document.getElementById('item-3'); //item-3 = C 
 const itemB = document.getElementById('item-2') // item-2 = B and it get replaced with X
 const newItem = document.createElement('li')
 newItem.innerText = "X"
