@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+
+<!-- JavaScript Code -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Refer to id
+        const menu = document.getElementById('menu');
+        const display = document.getElementById('display')
+        const btn = document.getElementById('btn')
+
+    // Event Listener
+        menu.addEventListener('change', getMenu);
+        btn.addEventListener('click', showWelcome);
+        function getMenu() {
+            console.log(menu.value);
+            display.innerText=menu.value
+        }
+        });
+
+        function showWelcome() {
+            alert('Welcome to the website')
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <label for="">Choose your tool</label>
+    <select name="" id="menu"> 
+        <option value="javaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
+    <p id="display"></p>
+    <br>
+    <button id="btn">Warning</button>
+
+</body>
+</html>

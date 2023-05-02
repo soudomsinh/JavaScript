@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+        // function welcome() {
+        //     alert("Welcome to my website")
+        // }
+
+        function highlight(object){
+            object.style.background="yellow"
+            
+        }
+
+        function unhighlight(object){
+            object.style.background="skyblue"
+            
+        }
+
+        function getMenu() {
+            const menu = document.getElementById('menu')
+            console.log(menu.value.toUpperCase());
+
+            const display= document.getElementById('display');
+            display.innerText=menu.value;
+        }
+
+        function mouseHighlight(obj) {
+            obj.style.background="orange"
+        }
+
+        function mouseUnhighlight(obj) {
+            obj.style.background="skyblue"
+        }
+
+
+
+    </script>
+
+
+</head>
+<body onload="welcome()">
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Deleniti, ut ipsam modi nostrum numquam veritatis nihil! 
+            Et a modi amet vitae nesciunt perferendis, deleniti quas 
+            quae officia doloribus accusamus? Tempora.</p>
+    </div>
+    <br>
+    <label for="">Name</label>
+    <input type="text" placeholder="Enter your name" onfocus="highlight(this)" onblur="unhighlight(this)"> <br>
+    <textarea name="" id="" cols="30" rows="10" onfocus="highlight(this)" onblur="unhighlight(this)" placeholder="Enter your message(s) here">
+    </textarea>
+    <br>
+    <label for="">Choose your tool</label>
+    <select name="" id="menu" onchange="getMenu()"> 
+        <option value="javaScript">javaScript</option>
+        <option value="Python">Python</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
+    <p id="display"></p>
+    <a href="" onmouseover="mouseHighlight(this)" onmouseout="mouseUnhighlight(this)">Menu 1</a>
+    <a href="" onmouseover="mouseHighlight(this)" onmouseout="mouseUnhighlight(this)">Menu 2</a>
+
+</body>
+</html>
