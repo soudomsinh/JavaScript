@@ -1,27 +1,26 @@
-// object
-
-const customer = {
-    customerName: 'John Doe',
-    age:40,
-    address: "New York"
-}
-
-console.log(customer);
+// MultiLine String vs Interpolation
 
 
-// additionally we can also do this
+//   Single quote string vs MultiLine String
+const address1 = "Name: John Doe Email: example@gmail.com Contact: 123456787"
+// Single quote has limitation-it does not allow to enter/indent new line whilst backtick can
+const address2 = `Name: John Doe 
+Email: example@gmail.com 
+Contact: 123456787` // backitck
 
-const username = "Sara Doe";
-const age = 35;
-const address = "bangkok";
+console.log(address1);
+console.log(address2);
 
-const customer2 ={
-    customerName: username,
-    age: age,
-    address:address,
-    // showData(){
-    //     console.log("Info of customer = " + username); // method data
-    // }
-}
-customer2.showData()
-console.log(customer2);
+
+// interpolation
+let customerName = "Sara Doe"
+let age = "23"
+let address = "Bangkok"
+
+const customer_info = `Name: ${customerName}
+Email: example@gmail.com 
+Contact: 123456787
+Age: ${age}
+Address: ${address}` // backitck
+
+console.log(customer_info);
