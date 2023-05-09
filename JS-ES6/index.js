@@ -1,27 +1,27 @@
-//  Arrow function
+// object
 
-
-// Example 1
-// Regular function
-function fullname(fname, lname) {
-    return fname + lname
+const customer = {
+    customerName: 'John Doe',
+    age:40,
+    address: "New York"
 }
 
-console.log(fullname, "Sengdao" , "oudomsihn")
-
-// Arrow function
-fullname2=(f_name, l_name) => f_name+l_name
-console.log(fullname2, "John ", "Doe");
+console.log(customer);
 
 
-// Example 2
-// regular function
-function setAge(age) {
-    return "Age = " + age
+// additionally we can also do this
+
+const username = "Sara Doe";
+const age = 35;
+const address = "bangkok";
+
+const customer2 ={
+    customerName: username,
+    age: age,
+    address:address,
+    // showData(){
+    //     console.log("Info of customer = " + username); // method data
+    // }
 }
-console.log(setAge(20));
-
-// arrow function
-setAge2 = (age2)=> "Age = " + age2
-
-console.log(setAge2(20));
+customer2.showData()
+console.log(customer2);
