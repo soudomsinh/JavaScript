@@ -10,6 +10,6 @@ console.log(newCountry);
 
 
 `
-Spread operator is the ... infront of country
+Spread operator is the ... infront of ... country
 
 `
